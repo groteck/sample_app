@@ -2,7 +2,9 @@ SampleApp::Application.routes.draw do
   get "pages/home"
 
   get "pages/contact"
-
+ 
+  #agregado para pasar el test rspec
+  get "pages/about"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
