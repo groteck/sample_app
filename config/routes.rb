@@ -1,11 +1,16 @@
 SampleApp::Application.routes.draw do
-  get "pages/home"
+#  get "pages/home"
 
-  get "pages/contact"
+#  get "pages/contact"
  
-  #agregado para pasar el test rspec
-  get "pages/about"
-  get "pages/help"
+#  rutas con match
+  match '/contact', :to => 'pages#contact'
+  match '/about',   :to => 'pages#about'
+  match '/help',    :to => 'pages#help' 
+
+ #agregado para pasar el test rspec
+#  get "pages/about"
+#  get "pages/help"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
