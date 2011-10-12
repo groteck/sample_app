@@ -7,7 +7,6 @@ gem 'rails', '3.1.0'
 
 gem 'sqlite3'
 
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -29,6 +28,7 @@ gem 'unicorn'
 
 group :development do
   gem 'rspec-rails', '2.6.1'
+  gem 'annotate', :git => 'git://github.com/jeremyolliver/annotate_models.git', :branch => 'rake_compatibility'
 end
 
 group :test do
